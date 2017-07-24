@@ -1,4 +1,4 @@
-package br.com.bea.chatbot.jensen;
+package br.com.bea.chatbot;
 
 import java.io.Serializable;
 import java.util.Date;

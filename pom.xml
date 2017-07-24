@@ -2,9 +2,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.bea.chatbot</groupId>
-    <artifactId>evil-jensen</artifactId>
+    <artifactId>xmpp-chatbot</artifactId>
     <version>0.0.0.1</version>
-    <name>Evil Jensen</name>
+    <name>xmpp-chatbot</name>
     <description>A chatbot on top of the xmpp protocol.</description>
     <dependencies>
         <dependency>
@@ -26,6 +26,11 @@
             <groupId>com.ibm.watson.developer_cloud</groupId>
             <artifactId>java-sdk</artifactId>
             <version>3.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
     </dependencies>
     <build>
@@ -50,7 +55,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>br.com.bea.chatbot.jensen.Jensen</mainClass>
+                            <mainClass>br.com.bea.chatbot.Xmpp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
