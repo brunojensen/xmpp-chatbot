@@ -22,12 +22,12 @@ public class Xmpp {
             try {
                 final TcpConnectionConfiguration tcpConfiguration = TcpConnectionConfiguration
                         .builder()
-                            .hostname("chat.tools.com.br")
-                            .port(5222)
+                            .hostname(Configuration.get(Configuration.XMPP_HOST))
+                            .port(Integer.parseInt(Configuration.get(Configuration.XMPP_PORT, "5222")))
                             .sslContext(getTrustAllSslContext())
                             .secure(true)
                             .build();
-                final XmppClient xmppClient = XmppClient.create("chat.tools.com.br",
+                final XmppClient xmppClient = XmppClient.create(Configuration.get(Configuration.XMPP_HOST),
                         XmppSessionConfiguration.builder().build(), tcpConfiguration);
                 final Bot bot = new Bot(new WatsonBotStrategy(xmppClient));
                 xmppClient.addInboundMessageListener(e -> {
