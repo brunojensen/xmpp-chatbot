@@ -2,15 +2,13 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.experimental.chatbot</groupId>
-    <artifactId>xmpp-chatbot-parent</artifactId>
+    <artifactId>drivers-chatbot-parent</artifactId>
     <version>0.0.0.1</version>
-    <name>xmpp-chatbot-parent</name>
+    <name>drivers-chatbot-parent</name>
     <packaging>pom</packaging>
-    <description>A chatbot on top of the xmpp protocol.</description>
     <modules>
-       <module>api-chatbot</module>
-       <module>drivers-chatbot</module>
-       <module>xmpp-chatbot</module>
+       <module>mail-driver-chatbot</module>
+       <module>ssh-driver-chatbot</module>
     </modules>
     <build>
         <plugins>

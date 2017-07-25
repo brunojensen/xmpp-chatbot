@@ -2,16 +2,17 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.experimental.chatbot</groupId>
-    <artifactId>xmpp-chatbot-parent</artifactId>
+    <artifactId>api-chatbot</artifactId>
     <version>0.0.0.1</version>
-    <name>xmpp-chatbot-parent</name>
-    <packaging>pom</packaging>
+    <name>api-chatbot</name>
     <description>A chatbot on top of the xmpp protocol.</description>
-    <modules>
-       <module>api-chatbot</module>
-       <module>drivers-chatbot</module>
-       <module>xmpp-chatbot</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

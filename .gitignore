@@ -1,4 +1,15 @@
+target/
+.settings/
+.metadata/
 .classpath
 .project
-.settings/
-target/
+.DS_Store
+.jsfdia
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+*.asc
+*.iml
+.idea
